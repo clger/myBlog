@@ -1,0 +1,26 @@
+# 4.1 Multiple Features
+So far we already have some basic understanding about linear regression. Now is time to add more features, we still use the housing price problem as our example:
+
+Size <br/> (feet<sup>2</sup>)  | Number of bedrooms|Number of floors| Age of home| Price
+------------- | ---------------|----------------|--------------|-------------|
+2104|5|1|45|460
+1416|3|2|40|232
+1534|3|2|30|315
+852 |2|1|36|178
+
+After we added multiple features, we need to specify some extra terms:<br/>
+<b>n *represent* the quantity of features</b>
+<b>x<sup>(i)</sup> *represent* the i<sub>th</sub> training instance which is a vecotr</b>
+
+for example we say  
+>x<sup>(2)</sup> = [1416,3,2,40]. 
+>x<sub>2</sub><sup>(2)</sup> = 3. x<sub>3</sub><sup>(2)</sup> = 2.  
+
+The hypothesis function of multiple features are:  
+  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x<sub>1</sub>+ &theta;<sub>2</sub>x<sub>2</sub>+ &theta;<sub>3</sub>x<sub>3</sub>+ &theta;<sub>4</sub>x<sub>4</sub>   
+  
+>For this model parameters are n+1 dimensional vector, any training instance from training set is n+1 vector as well. Feature matrix X's dimension is m*(n+1).  
+[//]:#
+
+Hence, we can use h<sub>&theta;</sub>(x) = &theta;<sup>T</sup>X to represent the previous function.
+
